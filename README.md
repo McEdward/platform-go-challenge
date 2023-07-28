@@ -29,3 +29,29 @@ It is appreciated, though not required, if a Dockerfile is included.
 Just create a fork from the current repo and send it to us!
 
 Good luck, potential colleague!
+
+
+# Code Documentation
+## Run WebApp
+Currently the application runs on localhost:8000 using the config.env file you can update amd adjust this endpoint if this specific port is un available or IP needs to be changed to your servers IP address.
+
+## API calls
+You can call the API from 3 distict URLs 
+"/" "GET" request                       ->  This returns all the currently available Data
+"/add" "POST" request                   ->  This can be used to add new assets of any type in a specific format
+"/update/{assetName}" "POST" request    ->  This can be used to update existing assets of any type to any other type in a specific format (including the name of the asset even though it works as a unique id)
+"/delete/{assetName}" "GET" request     ->  This can be used to delete an existing asset by Name
+
+# API Body format
+An example of the API raw body can be found in the post_format.json file this can be specificalyly used on the "/add" call
+
+## TEST
+A short test data has already been inplemented in frontend/frontend.go call test1, this data can be expanded on with more calls
+
+## Submission
+
+With the short time I had, This is my solution to the problem
+
+I hope you like what you see
+
+My best Regards and Thank you
